@@ -1,6 +1,6 @@
 {
   "name": "mochateer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fanci-fy your mocha tests with puppeteer.",
   "main": "index.js",
   "scripts": {

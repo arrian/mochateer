@@ -62,8 +62,10 @@ const PageUtils = {
             return null;
         }, selector, text);
 
-        assert.isNotNull(code, `Could not find the option '${value}' in the '${selector}' select`);
-
+        if(!code) {
+          throw new Error(`Could not find the option '${value}' in the '${selector}' select`);
+        }
+        
         page.select(selector, code);
     },
 
